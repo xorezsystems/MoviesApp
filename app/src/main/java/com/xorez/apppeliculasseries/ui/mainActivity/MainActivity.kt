@@ -32,18 +32,16 @@ class MainActivity : AppCompatActivity() {
 
         mainViewModel.onGetMoviesData()
 
-//        printListValues()
-
+        printListValues()
     }
 
-//    fun printListValues() {
-//        val list = listOf("1","E", "2", "R", "3", "I", "4", "C", "5", "K")
-//
-//        for(item in list){
-//            println(item)
-//        }
-//
-//    }
+    fun printListValues() {
+        val list = listOf("1","E", "2", "R", "3", "I", "4", "C", "5", "K")
+
+        for(item in list){
+            println(item)
+        }
+    }
 
     private fun setObservers() {
         mainViewModel.movies.observe(this, Observer {
